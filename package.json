@@ -1,0 +1,33 @@
+{
+  "name": "lit-flexbox-literals",
+  "version": "0.0.3",
+  "description": "LitElement Flexbox Classes and Literals for use in styles.js files",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Knott-Mesh/lit-flexbox-literals.git"
+  },
+  "keywords": [
+    "LitElement",
+    "Flexbox",
+    "Styles",
+    "TemplateLiterals"
+  ],
+  "author": "Tsavo Knott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/T-Knott-Mesh/lit-flexbox-literals/issues"
+  },
+  "homepage": "https://github.com/T-Knott-Mesh/lit-flexbox-literals#readme",
+  "dependencies": {
+    "lit-element": "^2.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-google": "^0.11.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-lit": "^0.5.0",
+    "eslint-plugin-mocha": "^5.2.1"
+  }
+}

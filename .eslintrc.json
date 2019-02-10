@@ -1,0 +1,9 @@
+{
+  "extends": ["google", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {"modules": true}
+  },
+  "plugins": ["lit"]
+}
