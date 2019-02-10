@@ -27,8 +27,10 @@ import {
   wrapReverse,
   displayBlock,
   invisible,
+  relative,
   fit,
   scroll,
+  fixed,
   fixedBottom,
   fixedLeft,
   fixedRight,
@@ -40,6 +42,7 @@ import {
   startJustified,
   centerJustified,
   aroundJustified,
+  endJustified,
   justified,
   selfStart,
   selfBaseline,
@@ -51,8 +54,6 @@ import {
   aroundAlignedContent,
   beteweenAlignedContent,
   endAlignedContent,
-  relative,
-  endJustified,
 } from '../Literals';
 
 export const Layouts = css`
@@ -93,7 +94,7 @@ export const Layouts = css`
     ${flexFactorNone}
   }
   .none {
-    ${none}
+    ${displayNone}
   }
 `;
 
