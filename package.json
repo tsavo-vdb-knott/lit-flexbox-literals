@@ -1,6 +1,6 @@
 {
   "name": "lit-flexbox-literals",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "LitElement Flexbox Classes and Literals for use in styles.js files",
   "main": "index.js",
   "scripts": {},

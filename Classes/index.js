@@ -1,198 +1,191 @@
 import {css} from 'lit-element';
 
+import {
+  displayFlex,
+  displayInlineFlex,
+  horizontal,
+  vertical,
+  wrap,
+  noWrap,
+  flexFactor,
+  flexFactorAuto,
+  flexFactorNone,
+  displayNone,
+  flex2,
+  flex3,
+  flex4,
+  flex5,
+  flex6,
+  flex7,
+  flex8,
+  flex9,
+  flex10,
+  flex11,
+  flex12,
+  horizontalReverse,
+  verticalReverse,
+  wrapReverse,
+  displayBlock,
+  invisible,
+  fit,
+  scroll,
+  fixedBottom,
+  fixedLeft,
+  fixedRight,
+  fixedTop,
+  startAligned,
+  centerAligned,
+  endAligned,
+  baseline,
+  startJustified,
+  centerJustified,
+  aroundJustified,
+  justified,
+  selfStart,
+  selfBaseline,
+  selfCenter,
+  selfEnd,
+  selfStretch,
+  startAlignedContent,
+  centerAlignedContent,
+  aroundAlignedContent,
+  beteweenAlignedContent,
+  endAlignedContent,
+  relative,
+  endJustified,
+} from '../Literals';
+
 export const Layouts = css`
   .layout.horizontal,
   .layout.vertical {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    ${displayFlex}
   }
   .layout.inline {
-    display: -ms-inline-flexbox;
-    display: -webkit-inline-flex;
-    display: inline-flex;
+    ${displayInlineFlex}
   }
   .layout.horizontal {
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    ${horizontal}
   }
   .layout.vertical {
-    -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    ${vertical}
   }
   .layout.wrap {
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
+    ${wrap}
   }
   .layout.no-wrap {
-    -ms-flex-wrap: nowrap;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    ${noWrap}
   }
   .layout.center,
   .layout.center-center {
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    ${centerAligned}
   }
   .layout.center-justified,
   .layout.center-center {
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    ${centerJustified}
   }
   .flex {
-    -ms-flex: 1 1 0.000000001px;
-    -webkit-flex: 1;
-    flex: 1;
-    -webkit-flex-basis: 0.000000001px;
-    flex-basis: 0.000000001px;
+    ${flexFactor}
   }
   .flex-auto {
-    -ms-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    flex: 1 1 auto;
+    ${flexFactorAuto}
   }
   .flex-none {
-    -ms-flex: none;
-    -webkit-flex: none;
-    flex: none;
+    ${flexFactorNone}
   }
   .none {
-    display: none !important;
+    ${none}
   }
 `;
 
 export const Factors = css`
   .flex,
   .flex-1 {
-    -ms-flex: 1 1 0.000000001px;
-    -webkit-flex: 1;
-    flex: 1;
-    -webkit-flex-basis: 0.000000001px;
-    flex-basis: 0.000000001px;
+    ${flexFactorAuto}
   }
 
   .flex-2 {
-    -ms-flex: 2;
-    -webkit-flex: 2;
-    flex: 2;
+    ${flex2}
   }
 
   .flex-3 {
-    -ms-flex: 3;
-    -webkit-flex: 3;
-    flex: 3;
+    ${flex3}
   }
 
   .flex-4 {
-    -ms-flex: 4;
-    -webkit-flex: 4;
-    flex: 4;
+    ${flex4}
   }
 
   .flex-5 {
-    -ms-flex: 5;
-    -webkit-flex: 5;
-    flex: 5;
+    ${flex5}
   }
 
   .flex-6 {
-    -ms-flex: 6;
-    -webkit-flex: 6;
-    flex: 6;
+    ${flex6}
   }
 
   .flex-7 {
-    -ms-flex: 7;
-    -webkit-flex: 7;
-    flex: 7;
+    ${flex7}
   }
 
   .flex-8 {
-    -ms-flex: 8;
-    -webkit-flex: 8;
-    flex: 8;
+    ${flex8}
   }
 
   .flex-9 {
-    -ms-flex: 9;
-    -webkit-flex: 9;
-    flex: 9;
+    ${flex9}
   }
 
   .flex-10 {
-    -ms-flex: 10;
-    -webkit-flex: 10;
-    flex: 10;
+    ${flex10}
   }
 
   .flex-11 {
-    -ms-flex: 11;
-    -webkit-flex: 11;
-    flex: 11;
+    ${flex11}
   }
 
   .flex-12 {
-    -ms-flex: 12;
-    -webkit-flex: 12;
-    flex: 12;
+    ${flex12}
   }
 `;
 
 export const ReverseLayouts = css`
   .layout.horizontal-reverse,
   .layout.vertical-reverse {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    ${displayFlex}
   }
 
   .layout.horizontal-reverse {
-    -ms-flex-direction: row-reverse;
-    -webkit-flex-direction: row-reverse;
-    flex-direction: row-reverse;
+    ${horizontalReverse}
   }
 
   .layout.vertical-reverse {
-    -ms-flex-direction: column-reverse;
-    -webkit-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    ${verticalReverse}
   }
 
   .layout.wrap-reverse {
-    -ms-flex-wrap: wrap-reverse;
-    -webkit-flex-wrap: wrap-reverse;
-    flex-wrap: wrap-reverse;
+    ${wrapReverse}
   }
 `;
 
 export const Positioning = css`
   .block {
-    display: block;
+    ${displayBlock}
   }
 
   [hidden] {
-    display: none !important;
+    ${displayNone}
   }
 
   .invisible {
-    visibility: hidden !important;
+    ${invisible}
   }
 
   .relative {
-    position: relative;
+    ${relative}
   }
 
   .fit {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    ${fit}
   }
 
   body.fullbleed {
@@ -201,8 +194,7 @@ export const Positioning = css`
   }
 
   .scroll {
-    -webkit-overflow-scrolling: touch;
-    overflow: auto;
+    ${scroll}
   }
 
   /* fixed position */
@@ -210,156 +202,101 @@ export const Positioning = css`
   .fixed-left,
   .fixed-right,
   .fixed-top {
-    position: fixed;
+    ${fixed}
   }
 
   .fixed-top {
-    top: 0;
-    left: 0;
-    right: 0;
+    ${fixedTop}
   }
 
   .fixed-right {
-    top: 0;
-    right: 0;
-    bottom: 0;
+    ${fixedRight}
   }
 
   .fixed-bottom {
-    right: 0;
-    bottom: 0;
-    left: 0;
+    ${fixedBottom}
   }
 
   .fixed-left {
-    top: 0;
-    bottom: 0;
-    left: 0;
+    ${fixedLeft}
   }
 `;
 
 export const Alignment = css`
   .layout.start {
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
+    ${startAligned}
   }
 
   .layout.center,
   .layout.center-center {
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    ${centerAligned}
   }
 
   .layout.end {
-    -ms-flex-align: end;
-    -webkit-align-items: flex-end;
-    align-items: flex-end;
+    ${endAligned}
   }
 
   .layout.baseline {
-    -ms-flex-align: baseline;
-    -webkit-align-items: baseline;
-    align-items: baseline;
+    ${baseline}
   }
 
   .layout.start-justified {
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
+    ${startJustified}
   }
 
   .layout.center-justified,
   .layout.center-center {
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    ${centerJustified}
   }
 
   .layout.end-justified {
-    -ms-flex-pack: end;
-    -webkit-justify-content: flex-end;
-    justify-content: flex-end;
+    ${endJustified}
   }
 
   .layout.around-justified {
-    -ms-flex-pack: distribute;
-    -webkit-justify-content: space-around;
-    justify-content: space-around;
+    ${aroundJustified}
   }
 
   .layout.justified {
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
+    ${justified}
   }
 
   .self-start {
-    -ms-align-self: flex-start;
-    -webkit-align-self: flex-start;
-    align-self: flex-start;
-  }
+   ${selfStart}
 
   .self-center {
-    -ms-align-self: center;
-    -webkit-align-self: center;
-    align-self: center;
+   ${selfCenter}
   }
 
   .self-end {
-    -ms-align-self: flex-end;
-    -webkit-align-self: flex-end;
-    align-self: flex-end;
+    ${selfEnd}
   }
 
   .self-stretch {
-    -ms-align-self: stretch;
-    -webkit-align-self: stretch;
-    align-self: stretch;
+   ${selfStretch}
   }
 
   .self-baseline {
-    -ms-align-self: baseline;
-    -webkit-align-self: baseline;
-    align-self: baseline;
+   ${selfBaseline}
   }
 
-  /**
-      * multi-line alignment in main axis.
-      */
   .layout.start-aligned {
-    -ms-flex-line-pack: start; /* IE10 */
-    -ms-align-content: flex-start;
-    -webkit-align-content: flex-start;
-    align-content: flex-start;
+   ${startAlignedContent}
   }
 
   .layout.end-aligned {
-    -ms-flex-line-pack: end; /* IE10 */
-    -ms-align-content: flex-end;
-    -webkit-align-content: flex-end;
-    align-content: flex-end;
+    ${endAlignedContent}
   }
 
   .layout.center-aligned {
-    -ms-flex-line-pack: center; /* IE10 */
-    -ms-align-content: center;
-    -webkit-align-content: center;
-    align-content: center;
+   ${centerAlignedContent}
   }
 
   .layout.between-aligned {
-    -ms-flex-line-pack: justify; /* IE10 */
-    -ms-align-content: space-between;
-    -webkit-align-content: space-between;
-    align-content: space-between;
+    ${beteweenAlignedContent}
   }
 
   .layout.around-aligned {
-    -ms-flex-line-pack: distribute; /* IE10 */
-    -ms-align-content: space-around;
-    -webkit-align-content: space-around;
-    align-content: space-around;
+    ${aroundAlignedContent}
   }
 `;

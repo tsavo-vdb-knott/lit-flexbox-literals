@@ -28,8 +28,8 @@ import {LitElement, html, css} from 'lit-element';
 import {
   displayFlex,
   horizontal,
-  alignCenter,
-  justifyCenter,
+  centerAligned,
+  centerJustified,
 } from 'lit-flexbox-literals';
 
 class MyElement extends LitElement {
@@ -38,16 +38,16 @@ class MyElement extends LitElement {
         :host{
           ${displayFlex}
           ${horizontal}
-          ${alignCenter}
-          ${justifyCenter}
+          ${centerAligned}
+          ${centerJustified}
 
         }
 
         div{
           ${displayFlex}
           ${horizontal}
-          ${alignCenter}
-          ${justifyCenter}
+          ${centerAligned}
+          ${centerJustified}
         }
       `;
   }
