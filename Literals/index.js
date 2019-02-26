@@ -6,6 +6,10 @@ export const displayFlex = css`
   display: flex;
 `;
 
+export const borderBox = css`
+  box-sizing: border-box;
+`;
+
 export const displayInlineFlex = css`
   display: -ms-inline-flexbox;
   display: -webkit-inline-flex;
@@ -210,9 +214,9 @@ export const centerAligned = css`
 `;
 
 export const endAligned = css`
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
 `;
 
 export const baseline = css`
