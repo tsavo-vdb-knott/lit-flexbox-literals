@@ -15,6 +15,10 @@ import {
   horizontal,
   verticalReverse,
   selfCenter,
+  startAligned,
+  endAligned,
+  selfStretch,
+  baseline,
 } from '../../Literals';
 export const styles = css`
   :host {
@@ -31,7 +35,7 @@ export const styles = css`
     ${vertical}
     border: 2px solid black;
     height: 250px;
-    width: 100%;
+    width: 75%;
   }
   .container1 {
     ${displayFlex}
@@ -39,7 +43,7 @@ export const styles = css`
     ${horizontal}
     border: 2px solid black;
     height: 250px;
-    width: 100%;
+    width: 75%;
   }
   .container2 {
     ${displayFlex}
@@ -47,7 +51,7 @@ export const styles = css`
     ${horizontal}
     border: 2px solid black;
     height: 250px;
-    width: 100%;
+    width: 75%;
   }
   .container3 {
     ${displayFlex}
@@ -55,7 +59,7 @@ export const styles = css`
     ${horizontal}
     border: 2px solid black;
     height: 250px;
-    width: 100%;
+    width: 75%;
   }
   .container4 {
     ${displayFlex}
@@ -63,7 +67,7 @@ export const styles = css`
     ${horizontal}
     border: 2px solid black;
     height: 250px;
-    width: 100%;
+    width: 75%;
   }
   .container5 {
     ${displayFlex}
@@ -71,7 +75,111 @@ export const styles = css`
     ${horizontal}
     border: 2px solid black;
     height: 250px;
-    width: 100%;
+    width: 75%;
+  }
+  .container6 {
+    ${displayFlex}
+    ${startAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container7 {
+    ${displayFlex}
+    ${endAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container8 {
+    ${displayFlex}
+    ${centerAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container9 {
+    ${displayFlex}
+    ${selfStretch}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container10 {
+    ${displayFlex}
+    ${baseline}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container11 {
+    ${displayFlex}
+    ${selfStart}
+    ${vertical}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container12 {
+    ${displayFlex}
+    ${selfEnd}
+    ${vertical}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container13 {
+    ${displayFlex}
+    ${selfCenter}
+    ${vertical}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container14 {
+    ${displayFlex}
+    ${justified}
+    ${vertical}
+    border: 2px solid black;
+    height: 500px;
+    width: 25%;
+  }
+  .container15 {
+    ${displayFlex}
+    ${aroundJustified}
+    ${vertical}
+    border: 2px solid black;
+    height: 500px;
+    width: 25%;
+  }
+  .container16 {
+    ${displayFlex}
+    ${startAligned}
+    ${vertical}
+    border: 2px solid black;
+    height: 400px;
+    width: 25%;
+  }
+  .container17 {
+    ${displayFlex}
+    ${endAligned}
+    ${vertical}
+    border: 2px solid black;
+    height: 400px;
+    width: 25%;
+  }
+  .container17 {
+    ${displayFlex}
+    ${centerAligned}
+    ${vertical}
+    border: 2px solid black;
+    height: 400px;
+    width: 25%;
   }
   .item {
     ${displayBlock}
@@ -84,12 +192,12 @@ export const styles = css`
     height: 50px;
     width: 75px;
     background-color: orange;
-    margin: 50px 50px 50px 50px;
+    margin: 10px 10px 10px 10px;
   }
   .item2 {
     ${displayBlock}
     height: 50px;
     width: 50px;
     background-color: orange;
-    margin: 50px 50px 50px 50px;
+    margin: 10px 10px 10px 10px;
 `;
