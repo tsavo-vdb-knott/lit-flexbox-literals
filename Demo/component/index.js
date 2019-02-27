@@ -235,12 +235,13 @@ export class DemoComponent extends LitElement {
         </div>
       </div>
       <div class="demoGroup">
-        <h1>Align-Items Center Verticle</h1>
+        <h1>Justify-Content Center Verticle</h1>
         <h2>Top Start with Verticle Flow</h2>
         <h3>
           <ul>
             <li>displayFlex</li>
             <li>selfCentered</li>
+            <li>centerAligned</li>
             <li>vertical</li>
           </ul>
         </h3>
@@ -313,6 +314,40 @@ export class DemoComponent extends LitElement {
           </ul>
         </h3>
         <div class="container17">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>Align-Items Center</h1>
+        <h2>Lines items in center of parent container</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>centerAligned</li>
+            <li>vertical</li>
+          </ul>
+        </h3>
+        <div class="container18">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>Stretch Vertical</h1>
+        <h2>Stretches items to fill parent</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>selfStretch</li>
+            <li>vertical</li>
+          </ul>
+        </h3>
+        <div class="container19">
           <div class="item1"></div>
           <div class="item2"></div>
           <div class="item1"></div>

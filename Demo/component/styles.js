@@ -19,6 +19,7 @@ import {
   endAligned,
   selfStretch,
   baseline,
+  horizontalReverse,
 } from '../../Literals';
 export const styles = css`
   :host {
@@ -127,7 +128,7 @@ export const styles = css`
   }
   .container12 {
     ${displayFlex}
-    ${selfEnd}
+    ${selfStart}
     ${vertical}
     border: 2px solid black;
     height: 250px;
@@ -136,6 +137,7 @@ export const styles = css`
   .container13 {
     ${displayFlex}
     ${selfCenter}
+    ${centerAligned}
     ${vertical}
     border: 2px solid black;
     height: 250px;
@@ -173,9 +175,17 @@ export const styles = css`
     height: 400px;
     width: 25%;
   }
-  .container17 {
+  .container18 {
     ${displayFlex}
     ${centerAligned}
+    ${vertical}
+    border: 2px solid black;
+    height: 400px;
+    width: 25%;
+  }
+  .container19 {
+    ${displayFlex}
+    ${selfStretch}
     ${vertical}
     border: 2px solid black;
     height: 400px;
@@ -195,6 +205,13 @@ export const styles = css`
     margin: 10px 10px 10px 10px;
   }
   .item2 {
+    ${displayBlock}
+    height: 50px;
+    width: 50px;
+    background-color: orange;
+    margin: 10px 10px 10px 10px;
+  }
+  .item3 {
     ${displayBlock}
     height: 50px;
     width: 50px;
