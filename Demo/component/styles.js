@@ -20,6 +20,7 @@ import {
   selfStretch,
   baseline,
   horizontalReverse,
+  endJustified,
 } from '../../Literals';
 export const styles = css`
   :host {
@@ -40,7 +41,7 @@ export const styles = css`
   }
   .container1 {
     ${displayFlex}
-    ${selfStart}
+    ${startJustified}
     ${horizontal}
     border: 2px solid black;
     height: 250px;
@@ -48,7 +49,7 @@ export const styles = css`
   }
   .container2 {
     ${displayFlex}
-    ${selfEnd}
+    ${endJustified}
     ${horizontal}
     border: 2px solid black;
     height: 250px;
@@ -56,7 +57,7 @@ export const styles = css`
   }
   .container3 {
     ${displayFlex}
-    ${selfCenter}
+    ${centerJustified}
     ${horizontal}
     border: 2px solid black;
     height: 250px;
@@ -128,12 +129,16 @@ export const styles = css`
   }
   .container12 {
     ${displayFlex}
-    ${selfStart}
+    ${endJustified}
     ${vertical}
     border: 2px solid black;
     height: 250px;
     width: 75%;
   }
+  // .container12 div {
+  //   ${displayFlex}
+  //   ${selfEnd}
+  // }
   .container13 {
     ${displayFlex}
     ${selfCenter}
