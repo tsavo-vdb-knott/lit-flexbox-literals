@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/T-Knott-Mesh/lit-flexbox-literals#readme",
   "dependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.7",
     "lit-element": "^2.0.1"
   },
   "devDependencies": {
