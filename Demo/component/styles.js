@@ -21,6 +21,19 @@ import {
   baseline,
   horizontalReverse,
   endJustified,
+  flexFactor,
+  flexFactorAuto,
+  flex2,
+  flex3,
+  flex4,
+  flex5,
+  flex6,
+  flex7,
+  flex8,
+  flex9,
+  flex10,
+  flex11,
+  flex12,
 } from '../../Literals';
 export const styles = css`
   :host {
@@ -127,18 +140,15 @@ export const styles = css`
     height: 250px;
     width: 75%;
   }
+
   .container12 {
     ${displayFlex}
-    ${endJustified}
+    ${endAligned}
     ${vertical}
     border: 2px solid black;
     height: 250px;
     width: 75%;
   }
-  // .container12 div {
-  //   ${displayFlex}
-  //   ${selfEnd}
-  // }
   .container13 {
     ${displayFlex}
     ${selfCenter}
@@ -190,11 +200,57 @@ export const styles = css`
   }
   .container19 {
     ${displayFlex}
-    ${selfStretch}
+    ${startAligned}
     ${vertical}
     border: 2px solid black;
     height: 400px;
     width: 25%;
+  }
+  .container20 {
+    ${displayFlex}
+    ${startJustified}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container20 .item2 { 
+    ${flexFactor}
+    ${flexFactorAuto}
+  }
+  .container21 {
+    ${displayFlex}
+    ${startJustified}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container22 {
+    ${displayFlex}
+    ${endAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container23 {
+    ${displayFlex}
+    ${startJustified}
+    ${horizontal}
+    height: 150px;
+    width: 75%;
+  }
+  .container24 {
+    ${displayFlex}
+    ${endAligned}
+    ${horizontal}
+    height: 150px;
+    width: 75%;
+  }
+  .mainContainer {
+    border: 2px solid black;
+    height: 300px;
   }
   .item {
     ${displayBlock}
@@ -218,8 +274,32 @@ export const styles = css`
   }
   .item3 {
     ${displayBlock}
+    ${flex2}
     height: 50px;
-    width: 50px;
+    width: auto;
+    margin: 10px 10px 10px 10px;
+  }
+  .item4 {
+    ${displayBlock}
+    ${flex3}
     background-color: orange;
+    height: 50px;
+    width: 45px;
+    margin: 10px 10px 10px 10px;
+  }
+  .item5 {
+    ${displayBlock}
+    ${flex4}
+    background-color: orange;
+    height: 50px;
+    width: 45px;
+    margin: 10px 10px 10px 10px;
+  }
+  .item6 {
+    ${displayBlock}
+    ${flex5}
+    background-color: orange;
+    height: 50px;
+    width: 45px;
     margin: 10px 10px 10px 10px;
 `;

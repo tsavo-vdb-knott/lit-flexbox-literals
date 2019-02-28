@@ -337,21 +337,107 @@ export class DemoComponent extends LitElement {
           <div class="item1"></div>
         </div>
       </div>
+      </br>
+      </br>
+      <h1>Note: The spaces are created using an invisible div. each item including the invisible has a flex value</h1>
       <div class="demoGroup">
-        <h1>19. Stretch Vertical</h1>
-        <h2>Stretches items to fill parent</h2>
+        <h1>19. Vertical Layout Option</h1>
+        <h2>Vertical row with end item</h2>
         <h3>
           <ul>
             <li>displayFlex</li>
-            <li>selfStretch</li>
+            <li>startAligned</li>
             <li>vertical</li>
           </ul>
         </h3>
         <div class="container19">
+          <div class="item4"></div>
+          <div class="item4"></div>
+          <div class="item5"></div>
+          <div class="item3"></div>
+          <div class="item4"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>20. Horizontal Layout Option</h1>
+        <h2>Horizontal row with end item</h2>
+        <h3>
+          <ul><title>Parent Css</title>
+            <li>displayFlex</li>
+            <li>startJustified</li>
+            <li>Horizontal</li>
+          </ul>
+          <ul><title>Child Css</title>
+            <li>flexFactor</li>
+            <li>flexAuto</li>
+          </ul>
+        </h3>
+        <div class="container20">
+          <div class="item4"></div>
+          <div class="item4"></div>
+          <div class="item6"></div>
+          <div class="item5"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>21. Horizontal Layout Option</h1>
+        <h2>Horizontal row with end item</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>startJustified</li>
+            <li>horizontal</li>
+          </ul>
+        </h3>
+        <div class="container21">
+          <div class="item4"></div>
+          <div class="item4"></div>
+          <div class="item5"></div>
+          <div class="item3"></div>
+          <div class="item4"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>22. Horizontal Layout Option</h1>
+        <h2>Horizontal row with start item</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>endAligned</li>
+            <li>horizontal</li>
+          </ul>
+        </h3>
+        <div class="container22">
+          <div class="item4"></div>
+          <div class="item3"></div>
+          <div class="item5"></div>
+          <div class="item4"></div>
+          <div class="item4"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>23. Horizontal Layout Option</h1>
+        <h2>Horizontal row with end item</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>startJustified</li>
+            <li>Horizontal</li>
+          </ul>
+        </h3>
+        <div class="mainContainer">
+        <div class="container23">
+          <div class="item1"></div>
           <div class="item1"></div>
           <div class="item2"></div>
+          <div class="item2"></div>
+        </div>
+        <div class="container24">
           <div class="item1"></div>
           <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item2"></div>
+        </div>
         </div>
       </div>
     `;
