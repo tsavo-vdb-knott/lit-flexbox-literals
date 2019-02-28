@@ -34,6 +34,8 @@ import {
   flex10,
   flex11,
   flex12,
+  wrap,
+  noWrap,
 } from '../../Literals';
 export const styles = css`
   :host {
@@ -251,6 +253,51 @@ export const styles = css`
   .mainContainer {
     border: 2px solid black;
     height: 300px;
+  }
+  .container25 {
+    ${displayFlex}
+    ${startJustified}
+    ${centerAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container26 {
+    ${displayFlex}
+    ${endJustified}
+    ${centerAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container27 {
+    ${displayFlex}
+    ${centerJustified}
+    ${centerAligned}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 75%;
+  }
+  .container28 {
+    ${displayFlex}
+    ${startJustified}
+    ${noWrap}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 100%;
+  }
+  .container29 {
+    ${displayFlex}
+    ${startJustified}
+    ${wrap}
+    ${horizontal}
+    border: 2px solid black;
+    height: 250px;
+    width: 100%;
   }
   .item {
     ${displayBlock}

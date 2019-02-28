@@ -48,8 +48,8 @@ export class DemoComponent extends LitElement {
         </div>
       </div>
       <div class="demoGroup">
-        <h1>2. Aligned Left Start with Horizontal Flow.</h1>
-        <h2>Justfy Content Flex End</h2>
+        <h1>2. Justfy Content Flex End.</h1>
+        <h2>Aligned Left Start with Horizontal Flow</h2>
         <h3>
           <ul>
             <li>displayFlex</li>
@@ -65,8 +65,8 @@ export class DemoComponent extends LitElement {
         </div>
       </div>
       <div class="demoGroup">
-        <h1>3. Top Center</h1>
-        <h2>Justfy Content Center</h2>
+        <h1>3. Justfy Content Center</h1>
+        <h2>Top Center</h2>
         <h3>
           <ul>
             <li>displayFlex</li>
@@ -438,6 +438,60 @@ export class DemoComponent extends LitElement {
           <div class="item2"></div>
           <div class="item2"></div>
         </div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>25. Justfy Content Flex Start Center Aligned</h1>
+        <h2>Middle Left Start with Horizontal Flow</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>startJustified</li>
+            <li>centerAligned</li>
+            <li>horizontal</li>
+          </ul>
+        </h3>
+        <div class="container25">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>26. Aligned Right  with Horizontal Flow.</h1>
+        <h2>Justfy Content Flex End</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>endJustified</li>
+            <li>centerAligned</li>
+            <li>horizontal</li>
+          </ul>
+        </h3>
+        <div class="container26">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
+        </div>
+      </div>
+      <div class="demoGroup">
+        <h1>27. Middle Center</h1>
+        <h2>Justfy Content Center</h2>
+        <h3>
+          <ul>
+            <li>displayFlex</li>
+            <li>centeredJustified</li>
+            <li>centerAligned</li>
+            <li>horizontal</li>
+          </ul>
+        </h3>
+        <div class="container27">
+          <div class="item1"></div>
+          <div class="item2"></div>
+          <div class="item1"></div>
+          <div class="item1"></div>
         </div>
       </div>
     `;
